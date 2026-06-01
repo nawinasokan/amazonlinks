@@ -148,7 +148,7 @@ export default function Header() {
                     : 'text-white/80 hover:text-amazon-orange',
                 )}
               >
-                <span>{cat.icon}</span>
+                <cat.icon className="h-4 w-4" strokeWidth={1.75} />
                 {cat.label}
                 <ChevronDown className="h-3.5 w-3.5 opacity-60" />
               </Link>
@@ -222,7 +222,7 @@ export default function Header() {
                         to={`/category/${cat.id}`}
                         className="flex flex-1 items-center gap-2 rounded-lg px-3 py-2.5 text-sm text-white/90 transition hover:bg-white/5"
                       >
-                        <span>{cat.icon}</span>
+                        <cat.icon className="h-4 w-4 shrink-0" strokeWidth={1.75} />
                         {cat.label}
                       </Link>
                       <button

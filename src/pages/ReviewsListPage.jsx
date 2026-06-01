@@ -62,7 +62,7 @@ export default function ReviewsListPage() {
                   : 'bg-white text-[#565959] ring-1 ring-gray-200 hover:ring-amazon-orange',
               )}
             >
-              <span>{cat.icon}</span>
+              <cat.icon className="h-4 w-4" strokeWidth={1.75} />
               {cat.label}
             </button>
           )

@@ -20,10 +20,10 @@ export default function CategoryGrid() {
               className="group flex flex-col items-center rounded-xl border border-gray-200 bg-white p-5 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-amazon-orange/50 hover:shadow-card-hover"
             >
               <span
-                className="flex h-14 w-14 items-center justify-center rounded-full text-2xl transition-transform duration-200 group-hover:scale-110"
+                className="flex h-14 w-14 items-center justify-center rounded-full transition-transform duration-200 group-hover:scale-110"
                 style={{ backgroundColor: `${cat.color}1A` }}
               >
-                {cat.icon}
+                <cat.icon className="h-7 w-7" strokeWidth={1.75} style={{ color: cat.color }} />
               </span>
               <h3 className="mt-3 text-sm font-bold text-[#111111]">{cat.label}</h3>
               <p className="mt-0.5 text-xs text-[#565959]">

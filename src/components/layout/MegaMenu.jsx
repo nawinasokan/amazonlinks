@@ -26,7 +26,7 @@ export default function MegaMenu({ category, onNavigate }) {
       {/* Column 1: subcategories */}
       <div>
         <h3 className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-[#565959]">
-          <span>{category.icon}</span> {category.label}
+          <category.icon className="h-4 w-4" strokeWidth={1.75} /> {category.label}
         </h3>
         <ul className="space-y-1">
           <li>

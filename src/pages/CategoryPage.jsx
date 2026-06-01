@@ -85,7 +85,8 @@ export default function CategoryPage() {
       {/* Header */}
       <div className="mt-4">
         <h1 className="flex items-center gap-2 text-2xl font-extrabold text-[#111111] sm:text-3xl">
-          <span>{category.icon}</span> {category.label}
+          <category.icon className="h-7 w-7 sm:h-8 sm:w-8" strokeWidth={1.75} style={{ color: category.color }} />
+          {category.label}
         </h1>
         <p className="mt-2 max-w-3xl text-sm text-[#565959]">{category.description}</p>
       </div>

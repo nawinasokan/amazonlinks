@@ -38,7 +38,7 @@ export default function TopPicksSection() {
                 : 'bg-white text-[#565959] ring-1 ring-gray-200 hover:ring-amazon-orange',
             )}
           >
-            <span>{tab.icon}</span>
+            <tab.icon className="h-4 w-4" strokeWidth={1.75} />
             {tab.label}
           </button>
         ))}

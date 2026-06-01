@@ -159,8 +159,8 @@ export default function ProductReviewPage() {
             ]}
           />
           {category && (
-            <span className="mt-4 inline-block rounded-full bg-amazon-orange px-3 py-1 text-xs font-bold uppercase tracking-wide text-amazon-dark">
-              {category.icon} {category.label}
+            <span className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-amazon-orange px-3 py-1 text-xs font-bold uppercase tracking-wide text-amazon-dark">
+              <category.icon className="h-3.5 w-3.5" strokeWidth={1.75} /> {category.label}
             </span>
           )}
           <h1 className="mt-3 text-3xl font-extrabold leading-tight text-white sm:text-4xl">

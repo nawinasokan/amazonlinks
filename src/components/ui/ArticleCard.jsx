@@ -26,8 +26,8 @@ export default function ArticleCard({ article, to, kind = 'Review' }) {
 
       <div className="flex flex-1 flex-col p-4">
         {category && (
-          <span className="text-xs font-semibold uppercase tracking-wide text-amazon-blue">
-            {category.icon} {category.label}
+          <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-amazon-blue">
+            <category.icon className="h-3.5 w-3.5" strokeWidth={1.75} /> {category.label}
           </span>
         )}
         <h3 className="mt-1.5 line-clamp-2 text-base font-bold leading-snug text-[#111111] group-hover:text-amazon-blue">
